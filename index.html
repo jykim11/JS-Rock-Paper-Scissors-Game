@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Rock Paper Scissors Game</h1>
+        <br>
+        <h1 class="title emoji">✊ ✋ ✌️</h1>
+    </header>
+    <br>
+    <br>
+
+    <div class='startGame'>
+        <button type="button" class="start" onclick="startGame(this)">Start Game</button>
+    </div>
+
+    <section id="game">
+
+        <div class="score">
+            <div class="playerScore">
+                <h2><u>Your Score </u></h2>
+                <h2 class="playerCount">0</h2>
+            </div>
+
+            <div class="computerScore">
+                <h2><u>Computer Score </u></h2>
+                <h2 class="computerCount">0</h2>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="choice">Choose Your Move!</div>
+        <br>
+        <br>
+
+        <div class="options">
+            <button class="rock">Rock</button>
+            <button class="scissors">Scissors</button>
+            <button class="paper">Paper</button>
+        </div>
+
+        <br>
+        <br>
+        <div class="choice"></div>
+
+        <div class="result1"></div>
+
+        <div class="result2"></div>
+        <br>
+        <br>
+        <button class="playAgain">Play Again!</div>
+
+
+    </section>
+
+    <script src="app.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: skyblue;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    text-align: center;
+    padding: 130px;
+}
+
+header {
+    position: relative;
+    bottom: 40px;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+.title {
+    color: firebrick;
+}
+
+#game,
+.playAgain {
+    display: none;
+}
+
+.playerScore,
+.computerScore {
+    display: inline-block;
+    width: 16rem;
+    text-align: center;
+    margin: 0.3rem;
+}
+
+.playerCount,
+.computerCount {
+    text-align: center;
+    margin: 1rem;
+}
+
+.finalScore {
+    display: block;
+}
+
+.result1 {
+    font-size: 1.4rem;
+}
+
+.result2 {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+/* From JavaScript classList on gameOver() Function. */
+.finalResult {
+    color: deeppink;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    position: relative;
+    top: -60px;
+}
+
+.playerWin>h2>u,
+.playerWin .playerCount {
+    color: darkmagenta;
+    font-size: 30px;
+}
+
+.computerWin>h2>u,
+.computerWin .computerCount {
+    color: darkmagenta;
+    font-size: 30px;
+}
+
+/*********  ********************************/
+
+.choice {
+    font-size: 20px;
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+.options {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.score {
+    border: 3px solid coral;
+    width: 35rem;
+    margin: auto;
+}
+
+.playerScore {
+    border-right: 3px solid coral;
+}
+
+.start {
+    padding: 0.8rem;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: white;
+    color: dodgerblue;
+}
+
+.start:hover,
+.rock:hover,
+.paper:hover,
+.scissors:hover,
+.playAgain:hover {
+    border: 2px solid white;
+    background: firebrick;
+    color: white;
+}
+
+.rock,
+.paper,
+.scissors,
+.playAgain {
+    padding: 0.8rem;
+    width: 140px;
+    border-radius: 10px;
+    background: white;
+    color: skyblue;
+    cursor: pointer;
+    font-size: 18px;
+}
