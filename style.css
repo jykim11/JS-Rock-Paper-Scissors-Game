@@ -9,7 +9,7 @@
 
 body {
     text-align: center;
-    padding: 130px;
+    padding: 7rem;
 }
 
 header {
@@ -94,12 +94,8 @@ h2 {
 
 .score {
     border: 3px solid coral;
-    width: 35rem;
+    width: auto;
     margin: auto;
-}
-
-.playerScore {
-    border-right: 3px solid coral;
 }
 
 .start {
@@ -126,10 +122,26 @@ h2 {
 .scissors,
 .playAgain {
     padding: 0.8rem;
-    width: 140px;
+    width: 10rem;
     border-radius: 10px;
     background: white;
     color: skyblue;
     cursor: pointer;
     font-size: 18px;
+    border: 2px solid black;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .rock,
+    .paper,
+    .scissors {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 766px) {
+    .playerScore {
+        border-right: 3px solid coral;
+    }
 }
